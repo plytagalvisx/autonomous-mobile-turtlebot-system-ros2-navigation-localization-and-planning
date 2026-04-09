@@ -214,15 +214,12 @@ class CheckLocalization(pt.behaviour.Behaviour):
         
         cov_norm = np.linalg.norm(np.array(self.covariance))  # L2 euclidian norm
         if cov_norm < 0.065: # Check if the overall covariance is low enough to consider the robot localized
-        # if self.covariance[0] < 0.1 and self.covariance[7] < 0.1 and self.covariance[35] < 0.1: # Check if the covariance in x, y, and yaw is low enough to consider the robot localized
             self.node.get_logger().info("Covariance is low enough, robot is localized.")
-            # self.node.get_logger().info(f"Covariance values: x={self.covariance[0]:.4f}, y={self.covariance[7]:.4f}, yaw={self.covariance[35]:.4f}")
             self.node.get_logger().info(f"Covariance value: {cov_norm}")
             self.shared_memory.localized = True
             return pt.common.Status.SUCCESS
         else:
             self.node.get_logger().warn("Covariance is too high, robot is NOT localized!")
-            # self.node.get_logger().warn(f"Covariance values: x={self.covariance[0]:.4f}, y={self.covariance[7]:.4f}, yaw={self.covariance[35]:.4f}")
             self.node.get_logger().warn(f"Covariance value: {cov_norm}")
             self.shared_memory.localized = False
             return pt.common.Status.FAILURE 
