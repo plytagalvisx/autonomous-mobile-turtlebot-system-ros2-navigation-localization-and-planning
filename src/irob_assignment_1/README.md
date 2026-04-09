@@ -1,3 +1,5 @@
+OBS! This README.md file contains instructions for the explorer.py mini-project, which is part of the final assignment (autonomous robot navigation) in the Robotics course. The goal of this mini-project is to implement an autonomous exploration behavior for a TurtleBot3 robot using ROS 2. The robot will explore an unknown environment by identifying frontiers (the boundary between known and unknown space) and navigating to them using the Nav2 stack.
+
 Note, you will find a better description on the course website :)
 
 https://canvas.kth.se/courses/56459/pages/assignment-1
@@ -22,7 +24,6 @@ The last line fixes an OpenGL problem that students with an old account would ot
 For all
 
 Environment setup
-
 
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
@@ -54,17 +55,12 @@ We recommend you do all the Beginner and Intermediate tutorials before starting 
 
 https://docs.ros.org/en/foxy/Tutorials.html
 
-
 Additionally, during assignment 1 you will be working with a popular framework nav2 and a TurtleBot3 (mobile robot platform). To better understand how they work, we recommend you do Turtlebot3 tutorials that you can find here: 
 https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
-
 
 as well as look at nav2 documentation and tutorials 
 
 https://docs.nav2.org/tutorials/index.html
-
-
-
 
 Mini-project
 Installation
@@ -72,11 +68,7 @@ Description
 
 You will now do a mini-project where you should help a TurtleBot3 robot explore an unknown environment. The robot is called Burger and you can see a picture of Burger below.
 
-
-
-
 Image taken from: http://emanual.robotis.com/docs/en/platform/turtlebot3/specifications/#data-of-turtlebot3-burger
-
 
 Project Tutorial: Building a Frontier-Based Explorer in ROS 2 (Foxy)
 
@@ -178,9 +170,6 @@ You need to change two things before you start (i.e. two paths).
 
 2. set "pkg_irob_assignment_1" in src/irob_assignment_1/launch/simulator.launch.py and src/irob_assignment_1/launch/simulator.launch.py to your path.
 
-
-
-
 Open three terminals.
 
 In each of them you need to source your environment setup.bash as well as your general setup.bash from /opt... file and set the robot model `export TURTLEBOT3_MODEL=burger`
@@ -201,38 +190,17 @@ ros2 launch irob_assignment_1 start.launch.py
 
 You will see a window called RViz and Gazebo open:
 
-
-
-
 After you run the third script you shoud be able to see the map and the cost map 
-
-
-
-
-
-
 
 NOTE: you can disable Gazebo if you are running out of memory/your running too slow. 
 
-
-
-
-
-
-
 In the main view of the RViz window you can see a small Turtlebot3 Burger robot in the middle of the white area. The white area of the map is called free space, it is space where the robot knows there is nothing. The large gray area is unknown space, it is space that the robot knowns nothing about. It can be either free space or occupied space. Occupied space is the cerise colored space. The cyan colored space is called C-space, it is space that are a distance from the occupied space such that the robot would collied with the occupied space if it would move into it. Take a look at the image below if you are interested. You can read more about it here. Your job will be to help Burger explore as much of the unknown space as possible.
-
-
-
 
 If you open up RQT:
 
 rqt
 
 Then in the topbar select Plugins->Introspection->Node Graph and uncheck Leaf topics, you will see which nodes publishing and subscribe to (hard to see on this screenshot but you need to do it yourself). 
-
-
-
 
 So now the moment you've been waiting for:
 Open explorer.py and start coding :) 
@@ -261,7 +229,6 @@ If the goal is accepted, the `goal_response_callback()` sets up a final callback
 
 In this way, the robot incrementally explores its environment by navigating from one frontier to the next. After each navigation attempt, the loop continues: a new map is received, new frontiers are found, and a new goal is selected. This process continues until no more valid frontiers are found, indicating that the entire environment has been explored.
 
-
 The presentation
 
 The important part of this assignment is not that you write superb code. What we want you to focus on is to understand ROS.
@@ -273,22 +240,13 @@ Which TF functions should I use to complete the mini-project?
 
 I did it with tf_buffer.lookup_transform(...) and tf2_geometry_msgs.do_transform_point(...).
 
-
-
-
 lookup_transform is not working, why?
 
 It is probably because you initialized the TF buffer (and listener) just before you called tf_buffer.lookup_transform(...). You have to initialize them early so that there is time to fill up the buffer with transforms.
 
-
-
-
 My robot moves weird in the mini-project, why?
 
 Did you set a maximum linear and angular velocity? 0.5 and 1.0, respectively, should work. Also, consider setting the linear velocity to 0 if the angular velocity is high (close to your maximum).
-
-
-
 
 The TF says something about extrapolating into the past, why?
 
@@ -303,8 +261,8 @@ listener = None
 
 # Your other functions
 
-if __name__ == "__main__":
-    rospy.init_node("controller")
+if **name** == "**main**":
+rospy.init_node("controller")
 
     # Other stuff you want to init
 
@@ -316,11 +274,7 @@ if __name__ == "__main__":
 
     rospy.spin()
 
-
 You should do this in the beginning (right after rospy.init_node(...)) such that it has time to buffer the transforms.
-
-
-
 
 The TF says something about extrapolating into the future, why?
 
@@ -328,29 +282,17 @@ Probably because you are trying to get a transform that is not yet available. TF
 
 You can use these inside tf_buffer.lookup_transform(...): rospy.Time(0) to get the most recent transform and rospy.Duration(1) to wait for 1 second if that is needed.
 
-
-
-
 Why is the exploration so slow?
 
 You probably did not use the Callback-Based SimpleActionClient. Implement it using Callback-Based SimpleActionClient instead. In the feedback callback you can see if the current gain is over, for example, 3 (or some other value that you find is good), and then cancel the goal if that is the case.
-
-
-
 
 I am trying to cancel the goal but it is not working :(
 
 Try to cancel all the goals using goal_client.cancel_all_goals().
 
-
-
-
 I implemented the Callback Based SimpleActionClient, but it is not working :(
 
 Did you actually cancel the request after you got a feedback with high enough gain? When you cancel the request you will get a result actionlib.TerminalState.PREEMPTED, so be sure that in the result callback that you only do something if the state is actionlib.TerminalState.SUCCEEDED.
-
-
-
 
 I get an error when launching the simulation
 
@@ -360,27 +302,18 @@ If you get an error like this when starting the simulation:
 
 or:
 
-
-
-
 [ERROR] [1566203746.351834242, 923.389000000]: Transform failed during publishing of map_odom transform: Lookup would require extrapolation into the past. Requested time 922.885000000 but the earliest data is at time 922.951000000, when looking up transform from frame [base_footprint] to frame [odom]
 
 Do not worry about it. It is fine. The first one will not influence the overall pipeline, while the second one is because the SLAM system is trying to use a transform that does not exist yet.
-
-
-
 
 I get another error when launching the simulation
 
 If you get an error like this when starting the simulation:
 
 [gazebo-1] process has died [pid 6639, exit code 255, cmd /opt/ros/noetic/lib/gazebo_ros/gzserver -e ode /home/dduberg/catkin_ws/src/irob_assignment_1/worlds/office.world __name:=gazebo __log:=/home/dduberg/.ros/log/18af60ee-c01f-11e9-98f6-b06ebf6030aa/gazebo-1.log].
-log file: /home/dduberg/.ros/log/19af60ee-c01f-11e9-98f6-b06ebf6030aa/gazebo-1*.log
+log file: /home/dduberg/.ros/log/19af60ee-c01f-11e9-98f6-b06ebf6030aa/gazebo-1\*.log
 
 This means that Gazebo crashed, and you have to restart the simulation. Sadly, this happens sometimes.
-
-
-
 
 It takes a long time for RViz and/or Gazebo to load/start
 

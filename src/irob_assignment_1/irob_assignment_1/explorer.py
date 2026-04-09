@@ -125,123 +125,6 @@ class ExplorerNode(Node):
         finally:
             self.navigation_in_progress = False
 
-    def find_frontiers(self, map_array):
-        """
-        TODO: Detect frontier cells in the occupancy grid.
-              Definition: a frontier is a FREE cell (value == 0)
-              that has at least one UNKNOWN neighbor (value == -1)
-              in its 8-neighborhood.
-
-              Steps:
-              - Iterate over interior cells (avoid the outermost border).
-              - For each free cell, check the 3x3 neighborhood.
-              - If any neighbor is unknown, add (row, col) to a list of frontiers.
-              - Return the list of (row, col) frontier cells.
-        """
-        frontiers = []
-        height, width = map_array.shape
-        
-        for row in range(1, height - 1):
-            for col in range(1, width - 1):
-                if map_array[row, col] == 0:  # Free cell
-                    neighborhood = map_array[row-1:row+2, col-1:col+2]
-                    if np.any(neighborhood == -1):  # At least one unknown neighbor
-                        frontiers.append((row, col))
-        
-        return frontiers
-
-    def choose_frontier(self, frontiers):
-        """
-        TODO: Choose the closest frontier to the robot's current grid position.
-              - Skip frontiers already present in self.visited_frontiers.
-              - Compute Euclidean distance in grid coordinates.
-              - Keep the minimum; return (row, col) or None if none available.
-              - Add the chosen frontier to self.visited_frontiers.
-        """
-        if not frontiers:
-            return None
-        
-        closest_frontier = None
-        min_distance = float('inf')
-        
-        for frontier in frontiers:
-            if frontier in self.visited_frontiers:
-                continue
-            
-            distance = np.sqrt((frontier[0] - self.robot_position[0])**2 + 
-                               (frontier[1] - self.robot_position[1])**2)
-            
-            if distance < min_distance:
-                min_distance = distance
-                closest_frontier = frontier
-        
-        if closest_frontier is not None:
-            self.mark_frontier_region_visited(closest_frontier) # here we mark a whole region around the chosen frontier as visited to prevent the robot from trying to navigate to very close frontiers in the future.
-            # self.visited_frontiers.add(closest_frontier)
-        
-        return closest_frontier
-
-    # More advanced frontier selection with clustering and centroid computation
-    def choose_frontier_cluster_centroid(self, frontiers):
-        """
-        Cluster frontier cells, then choose the closest cluster centroid
-        to the robot's current grid position.
-        Skip centroids already visited.
-        """
-        if not frontiers:
-            return None
-
-        clusters = self.cluster_frontiers(frontiers)
-
-        best_centroid = None
-        best_cluster = None
-        min_distance = float('inf')
-
-        for cluster in clusters:
-            centroid = self.compute_cluster_centroid(cluster)
-
-            if centroid in self.visited_frontiers:
-                continue
-
-            distance = np.sqrt(
-                (centroid[0] - self.robot_position[0]) ** 2 +
-                (centroid[1] - self.robot_position[1]) ** 2
-            )
-
-            if distance < min_distance:
-                min_distance = distance
-                best_centroid = centroid
-                best_cluster = cluster
-
-        # if best_centroid is not None:
-        #     self.mark_frontier_region_visited(best_centroid, radius=5)
-
-        if best_cluster is not None:
-            for cell in best_cluster:
-                self.visited_frontiers.add(cell)
-
-        return best_centroid
-
-    def filter_frontiers_by_distance(self, frontiers, min_distance_m=0.4):
-        if self.map_data is None or self.robot_world_position is None:
-            return frontiers
-
-        resolution = self.map_data.info.resolution
-        origin_x = self.map_data.info.origin.position.x
-        origin_y = self.map_data.info.origin.position.y
-        robot_x, robot_y = self.robot_world_position
-
-        filtered = []
-        for row, col in frontiers:
-            x = (col + 0.5) * resolution + origin_x
-            y = (row + 0.5) * resolution + origin_y
-
-            distance_m = np.sqrt((x - robot_x)**2 + (y - robot_y)**2)
-            if distance_m >= min_distance_m:
-                filtered.append((row, col))
-
-        return filtered
-
     def update_robot_position(self):
         if self.map_data is None:
             return
@@ -273,16 +156,6 @@ class ExplorerNode(Node):
         except TransformException as ex:
             self.get_logger().warn(f'Could not transform map to base_link: {ex}')
             return False
-
-    def mark_nearby_frontiers_visited(self, frontiers, radius_cells=2):
-        for frontier in frontiers:
-            self.mark_frontier_region_visited(frontier, radius=radius_cells)
-
-    def mark_frontier_region_visited(self, frontier, radius=5):
-        r0, c0 = frontier
-        for r in range(r0 - radius, r0 + radius + 1):
-            for c in range(c0 - radius, c0 + radius + 1):
-                self.visited_frontiers.add((r, c))
 
     def cluster_frontiers(self, frontiers):
         """
@@ -320,8 +193,8 @@ class ExplorerNode(Node):
             clusters.append(cluster)
 
         return clusters
-
-    def compute_cluster_centroid(self, cluster):
+    
+    def compute_centroid(self, cluster):
         """
         Compute centroid of a cluster in grid coordinates.
         Returns (row, col) as integers.
@@ -332,7 +205,98 @@ class ExplorerNode(Node):
         row_centroid = int(np.mean(rows))
         col_centroid = int(np.mean(cols))
 
-        return (row_centroid, col_centroid)
+        return (row_centroid, col_centroid)    
+                
+    def choose_frontier(self, clusters):
+        best_target = None
+        best_score = -float('inf')
+        best_cluster = None
+
+        for cluster in clusters:
+
+            # Ignore tiny clusters (noise)
+            # if len(cluster) < 5:
+            #     continue
+
+            centroid = self.compute_centroid(cluster)
+
+            # Skip visited
+            # if centroid in self.visited_frontiers:
+            #     continue
+            
+            if any(cell in self.visited_frontiers for cell in cluster):
+                continue
+
+            # Distance in grid
+            dist = np.linalg.norm(
+                np.array(centroid) - np.array(self.robot_position)
+            )
+
+            # Information gain = cluster size
+            info_gain = len(cluster)
+
+            # Score: bigger + closer = better
+            score = info_gain / (dist + 1e-5)
+
+            if score > best_score:
+                best_score = score
+                best_target = centroid
+                best_cluster = cluster
+                
+        # if best_target is not None:
+        #     self.visited_frontiers.add(best_target)
+
+        if best_cluster is not None:
+            for cell in best_cluster:
+                self.visited_frontiers.add(cell)
+
+        return best_target
+    
+    def find_frontiers(self, map_array):
+        """
+        TODO: Detect frontier cells in the occupancy grid.
+              Definition: a frontier is a FREE cell (value == 0)
+              that has at least one UNKNOWN neighbor (value == -1)
+              in its 8-neighborhood.
+
+              Steps:
+              - Iterate over interior cells (avoid the outermost border).
+              - For each free cell, check the 3x3 neighborhood.
+              - If any neighbor is unknown, add (row, col) to a list of frontiers.
+              - Return the list of (row, col) frontier cells.
+        """
+        frontiers = []
+        height, width = map_array.shape
+        
+        for row in range(1, height - 1):
+            for col in range(1, width - 1):
+                if map_array[row, col] == 0:  # Free cell
+                    neighborhood = map_array[row-1:row+2, col-1:col+2]
+                    if np.any(neighborhood == -1):  # At least one unknown neighbor
+                        frontiers.append((row, col))
+        
+        return frontiers
+
+    # Here we filter out frontiers that are too close to the robot's current position, to prevent the robot from trying to navigate to very close frontiers in the future. This is a simple heuristic to improve exploration efficiency and prevent oscillations.
+    def filter_frontiers_by_distance(self, frontiers, min_distance_m=0.4):
+        if self.map_data is None or self.robot_world_position is None:
+            return frontiers
+
+        resolution = self.map_data.info.resolution
+        origin_x = self.map_data.info.origin.position.x
+        origin_y = self.map_data.info.origin.position.y
+        robot_x, robot_y = self.robot_world_position
+
+        filtered = []
+        for row, col in frontiers:
+            x = (col + 0.5) * resolution + origin_x
+            y = (row + 0.5) * resolution + origin_y
+
+            distance_m = np.sqrt((x - robot_x)**2 + (y - robot_y)**2)
+            if distance_m >= min_distance_m:
+                filtered.append((row, col))
+
+        return filtered
 
     def explore(self):
         """
@@ -370,14 +334,19 @@ class ExplorerNode(Node):
             self.get_logger().info("No frontiers found. Exploration complete!")
             return
         
-        filtered_frontiers = self.filter_frontiers_by_distance(frontiers, min_distance_m=0.4)
-        if not filtered_frontiers:
+        frontiers = self.filter_frontiers_by_distance(frontiers)
+        if not frontiers:
             self.get_logger().info("All detected frontiers are too close to the robot. Marking local frontier patch as visited.")
-            # self.mark_nearby_frontiers_visited(frontiers, radius_cells=2)
             return
         
-        # chosen_frontier = self.choose_frontier(filtered_frontiers)
-        chosen_frontier = self.choose_frontier_cluster_centroid(filtered_frontiers) # more advanced frontier selection with clustering and centroid computation
+        clusters = self.cluster_frontiers(frontiers)
+        self.get_logger().info(f"Frontiers: {len(frontiers)}, Clusters: {len(clusters)}")
+
+        if len(frontiers) < 5: # 5:  # if there are very few frontiers or clusters, we are likely done
+            self.get_logger().info("Exploration considered complete")
+            return
+
+        chosen_frontier = self.choose_frontier(clusters) 
         if chosen_frontier is None:
             self.get_logger().info("No (closest) unvisited frontiers available.")
             return
@@ -390,12 +359,7 @@ class ExplorerNode(Node):
         x = col * resolution + origin_x
         y = row * resolution + origin_y
         
-        # robot_x, robot_y = self.robot_world_position
-        # distance_m = np.sqrt((x - robot_x)**2 + (y - robot_y)**2)
-        # if distance_m < 0.4:
-        #     self.visited_frontiers.add(chosen_frontier) # this prevents the same frontier from being chosen again in the future, even if we skip it now due to being too close
-        #     self.get_logger().info("Chosen frontier too close to robot, skipping")
-        #     return
+        self.get_logger().info(f"Exploring → ({x:.2f}, {y:.2f})")
         
         self.navigate_to(x, y)
 
