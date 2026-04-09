@@ -1,0 +1,9 @@
+{
+  "package_name": "irob_interfaces",
+  "non_idl_tuples": [
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_interfaces:srv/GetGoal.srv",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_interfaces:srv/Activate.srv",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_interfaces:srv/Deactivate.srv",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_interfaces:srv/AtGoal.srv"
+  ]
+}

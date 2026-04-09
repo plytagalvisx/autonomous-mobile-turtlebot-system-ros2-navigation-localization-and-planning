@@ -1,0 +1,7 @@
+[console_scripts]
+activation_server = irob_assignment_5.activation_server:main
+at_goal_server = irob_assignment_5.at_goal_server:main
+bt_students = irob_assignment_5.BT_students:main
+explorer = irob_assignment_5.explorer:main
+goal_server = irob_assignment_5.goal_server:main
+sm_students = irob_assignment_5.SM_students:main

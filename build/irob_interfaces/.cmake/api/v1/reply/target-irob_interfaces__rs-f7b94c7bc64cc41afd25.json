@@ -1,0 +1,78 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/irob_interfaces__rs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "irob_interfaces__rs::@53bc8220036e6a135831",
+	"name" : "irob_interfaces__rs",
+	"paths" : 
+	{
+		"build" : "irob_interfaces__rs",
+		"source" : "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/irob_interfaces__rs"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/irob_interfaces__rs/CMakeFiles/irob_interfaces__rs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/irob_interfaces__rs/CMakeFiles/irob_interfaces__rs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_generator_rs/irob_interfaces/rust/src/lib.rs.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

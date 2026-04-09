@@ -1,0 +1,416 @@
+[0.024s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo
+[0.205s] CMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+[0.205s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.205s]   CMake.
+[0.205s] 
+[0.205s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.205s]   to tell CMake that the project requires at least <min> but has been updated
+[0.205s]   to work with policies introduced by <max> or earlier.
+[0.205s] 
+[0.205s] 
+[0.206s] -- The C compiler identification is Clang 19.1.7
+[0.349s] -- The CXX compiler identification is Clang 19.1.7
+[0.377s] -- Detecting C compiler ABI info
+[0.552s] -- Detecting C compiler ABI info - done
+[0.557s] -- Check for working C compiler: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/arm64-apple-darwin20.0.0-clang - skipped
+[0.558s] -- Detecting C compile features
+[0.558s] -- Detecting C compile features - done
+[0.564s] -- Detecting CXX compiler ABI info
+[0.746s] -- Detecting CXX compiler ABI info - done
+[0.753s] -- Check for working CXX compiler: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+[0.753s] -- Detecting CXX compile features
+[0.753s] -- Detecting CXX compile features - done
+[0.790s] -- Found ament_cmake: 1.3.13 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/ament_cmake/cmake)
+[0.951s] -- Found Python3: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/python3 (found version "3.12.13") found components: Interpreter
+[1.371s] -- Found PkgConfig: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/pkg-config (found version "0.29.2")
+[1.377s] -- Checking for module 'bullet>=2.82'
+[1.481s] --   Found bullet, version 3.25
+[2.542s] -- Found assimp: /Users/milenavilcinskaite/micromamba/envs/ros_env4/include (found suitable version "6.0.2", minimum required is "5.2.0")
+[2.545s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.712s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.713s] -- Found Threads: TRUE
+[2.717s] -- Found DART: /Users/milenavilcinskaite/micromamba/envs/ros_env4/include (Required is at least version "6.6") found components: dart
+[2.752s] CMake Warning (dev) at /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/cmake/gazebo/gazebo-config.cmake:187 (find_package):
+[2.752s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[2.752s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[2.752s]   set the policy and suppress this warning.
+[2.752s] 
+[2.752s] Call Stack (most recent call first):
+[2.752s]   CMakeLists.txt:23 (find_package)
+[2.752s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.752s] 
+[2.871s] -- Found Boost: /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/cmake/Boost-1.88.0/BoostConfig.cmake (found suitable version "1.88.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time
+[2.983s] -- Found ZLIB: /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/libz.dylib (found version "1.3.1")
+[3.041s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.060s] -- Searching for dependencies of ignition-math6
+[3.070s] -- Found OGRE
+[3.070s] --   static     : OFF
+[3.070s] --   components : Bites;HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[3.070s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus
+[3.070s] --   media      : /Users/milenavilcinskaite/micromamba/envs/ros_env4/Media
+[3.071s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.080s] -- Looking for ignition-transport8 -- found version 8.5.1
+[3.080s] -- Searching for dependencies of ignition-transport8
+[3.144s] -- Found UUID: TRUE
+[3.154s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[3.154s] -- Searching for dependencies of ignition-msgs5
+[3.156s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.183s] -- Checking for module 'tinyxml2'
+[3.280s] --   Found tinyxml2, version 11.0.0
+[3.552s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[3.560s] -- Looking for ignition-common3 -- found version 3.17.1
+[3.560s] -- Searching for dependencies of ignition-common3
+[3.619s] -- Looking for dlfcn.h - found
+[3.621s] -- Looking for libdl - found
+[3.622s] -- Found DL: TRUE
+[3.624s] -- Searching for <ignition-common3> component [graphics]
+[3.632s] -- Looking for ignition-common3-graphics -- found version 3.17.1
+[3.632s] -- Searching for dependencies of ignition-common3-graphics
+[3.633s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.642s] -- Looking for ignition-fuel_tools4 -- found version 4.6.0
+[3.642s] -- Searching for dependencies of ignition-fuel_tools4
+[4.226s] -- Found CURL: /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/libcurl.dylib (found version "8.18.0")
+[4.259s] -- Checking for module 'jsoncpp'
+[4.355s] --   Found jsoncpp, version 1.9.6
+[4.624s] -- Found JSONCPP: TRUE
+[4.667s] -- Checking for module 'yaml-0.1'
+[4.767s] --   Found yaml-0.1, version 0.2.5
+[5.057s] -- Found YAML: TRUE
+[5.082s] -- Checking for module 'libzip'
+[5.197s] --   Found libzip, version 1.11.2
+[5.486s] -- Found ZIP: TRUE
+[5.486s] -- Looking for ignition-common3 -- found version 3.17.1
+[5.487s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.487s] -- Looking for ignition-msgs5 -- found version 5.11.0
+[5.510s] -- Found gazebo_ros_pkgs: 3.9.0 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/gazebo_ros_pkgs/cmake)
+[5.523s] -- Found geometry_msgs: 4.9.1 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/geometry_msgs/cmake)
+[5.667s] -- Found rosidl_generator_c: 3.1.8 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_c/cmake)
+[5.692s] -- Found rosidl_adapter: 3.1.8 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_adapter/cmake)
+[5.725s] -- Found rosidl_generator_cpp: 3.1.8 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_cpp/cmake)
+[5.764s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.817s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.918s] -- Found nav_msgs: 4.9.1 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/nav_msgs/cmake)
+[5.954s] -- Found rclcpp: 16.0.18 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rclcpp/cmake)
+[6.126s] -- Checking for module 'yaml-0.1'
+[6.234s] --   Found yaml-0.1, version 0.2.5
+[6.534s] -- Found rmw_implementation_cmake: 6.1.2 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rmw_implementation_cmake/cmake)
+[6.548s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rmw_cyclonedds_cpp/cmake)
+[6.629s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[6.751s] -- Found sensor_msgs: 4.9.1 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/sensor_msgs/cmake)
+[6.789s] -- Found tf2: 0.25.19 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/tf2/cmake)
+[6.880s] -- Configuring done (6.8s)
+[7.003s] -- Generating done (0.1s)
+[7.110s] -- Build files have been written to: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo
+[7.115s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo
+[7.116s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --build /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo -- -j10 -l10
+[7.194s] [ 33%] Building CXX object CMakeFiles/obstacle1.dir/src/obstacle1.cpp.o
+[7.194s] [ 33%] Building CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o
+[7.194s] [ 50%] Building CXX object CMakeFiles/traffic_light_plugin.dir/src/traffic_light_plugin.cpp.o
+[7.194s] [ 50%] Building CXX object CMakeFiles/obstacles.dir/src/obstacles.cpp.o
+[7.194s] [ 50%] Building CXX object CMakeFiles/traffic_bar_plugin.dir/src/traffic_bar_plugin.cpp.o
+[7.194s] [ 50%] Building CXX object CMakeFiles/obstacle2.dir/src/obstacle2.cpp.o
+[9.506s] In file included from /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp:17:
+[9.506s] In file included from /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.hpp:24:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/rclcpp.hpp:155:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executors.hpp:21:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executor.hpp:37:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executor_options.hpp:20:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/memory_strategies.hpp:18:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/memory_strategy.hpp:25:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_executable.hpp:20:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/callback_group.hpp:29:
+[9.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/subscription_base.hpp:32:
+[9.506s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_subscription_callback.hpp:391:7: warning: 'set_deprecated<sensor_msgs::msg::LaserScan_<std::allocator<void>>>' is deprecated: use 'void(std::shared_ptr<const MessageT>)' instead [-Wdeprecated-declarations]
+[9.506s]   391 |       set_deprecated(static_cast<typename scbth::callback_type>(callback));
+[9.506s]       |       ^
+[9.506s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/subscription_factory.hpp:94:29: note: in instantiation of function template specialization 'rclcpp::AnySubscriptionCallback<sensor_msgs::msg::LaserScan_<std::allocator<void>>>::set<std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>>' requested here
+[9.507s]    94 |   any_subscription_callback.set(std::forward<CallbackT>(callback));
+[9.507s]       |                             ^
+[9.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/create_subscription.hpp:122:26: note: in instantiation of function template specialization 'rclcpp::create_subscription_factory<sensor_msgs::msg::LaserScan_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, sensor_msgs::msg::LaserScan_<std::allocator<void>>>' requested here
+[9.507s]   122 |   auto factory = rclcpp::create_subscription_factory<MessageT>(
+[9.507s]       |                          ^
+[9.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/create_subscription.hpp:190:26: note: in instantiation of function template specialization 'rclcpp::detail::create_subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, rclcpp::Node, rclcpp::Node, sensor_msgs::msg::LaserScan_<std::allocator<void>>>' requested here
+[9.507s]   190 |   return rclcpp::detail::create_subscription<
+[9.507s]       |                          ^
+[9.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/node_impl.hpp:99:18: note: in instantiation of function template specialization 'rclcpp::create_subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, rclcpp::Node>' requested here
+[9.507s]    99 |   return rclcpp::create_subscription<MessageT>(
+[9.507s]       |                  ^
+[9.507s] /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp:45:21: note: in instantiation of function template specialization 'rclcpp::Node::create_subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<sensor_msgs::msg::LaserScan_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::LaserScan_<std::allocator<void>>>>' requested here
+[9.507s]    45 |   scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+[9.507s]       |                     ^
+[9.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_subscription_callback.hpp:405:5: note: 'set_deprecated<sensor_msgs::msg::LaserScan_<std::allocator<void>>>' has been explicitly marked deprecated here
+[9.507s]   405 |   [[deprecated("use 'void(std::shared_ptr<const MessageT>)' instead")]]
+[9.507s]       |     ^
+[10.069s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_subscription_callback.hpp:391:7: warning: 'set_deprecated<nav_msgs::msg::Odometry_<std::allocator<void>>>' is deprecated: use 'void(std::shared_ptr<const MessageT>)' instead [-Wdeprecated-declarations]
+[10.070s]   391 |       set_deprecated(static_cast<typename scbth::callback_type>(callback));
+[10.070s]       |       ^
+[10.070s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/subscription_factory.hpp:94:29: note: in instantiation of function template specialization 'rclcpp::AnySubscriptionCallback<nav_msgs::msg::Odometry_<std::allocator<void>>>::set<std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>>' requested here
+[10.070s]    94 |   any_subscription_callback.set(std::forward<CallbackT>(callback));
+[10.070s]       |                             ^
+[10.070s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/create_subscription.hpp:122:26: note: in instantiation of function template specialization 'rclcpp::create_subscription_factory<nav_msgs::msg::Odometry_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<nav_msgs::msg::Odometry_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::Odometry_<std::allocator<void>>>, nav_msgs::msg::Odometry_<std::allocator<void>>>' requested here
+[10.070s]   122 |   auto factory = rclcpp::create_subscription_factory<MessageT>(
+[10.070s]       |                          ^
+[10.070s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/create_subscription.hpp:190:26: note: in instantiation of function template specialization 'rclcpp::detail::create_subscription<nav_msgs::msg::Odometry_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<nav_msgs::msg::Odometry_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::Odometry_<std::allocator<void>>>, rclcpp::Node, rclcpp::Node, nav_msgs::msg::Odometry_<std::allocator<void>>>' requested here
+[10.070s]   190 |   return rclcpp::detail::create_subscription<
+[10.070s]       |                          ^
+[10.070s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/node_impl.hpp:99:18: note: in instantiation of function template specialization 'rclcpp::create_subscription<nav_msgs::msg::Odometry_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<nav_msgs::msg::Odometry_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::Odometry_<std::allocator<void>>>, rclcpp::Node>' requested here
+[10.070s]    99 |   return rclcpp::create_subscription<MessageT>(
+[10.070s]       |                  ^
+[10.070s] /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp:52:21: note: in instantiation of function template specialization 'rclcpp::Node::create_subscription<nav_msgs::msg::Odometry_<std::allocator<void>>, std::__bind<void (Turtlebot3Drive::*)(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>>>), Turtlebot3Drive *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<nav_msgs::msg::Odometry_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<nav_msgs::msg::Odometry_<std::allocator<void>>>>' requested here
+[10.071s]    52 |   odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
+[10.071s]       |                     ^
+[10.071s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_subscription_callback.hpp:405:5: note: 'set_deprecated<nav_msgs::msg::Odometry_<std::allocator<void>>>' has been explicitly marked deprecated here
+[10.071s]   405 |   [[deprecated("use 'void(std::shared_ptr<const MessageT>)' instead")]]
+[10.071s]       |     ^
+[13.989s] 2 warnings generated.
+[14.014s] [ 58%] Linking CXX executable turtlebot3_drive
+[14.101s] [ 58%] Built target turtlebot3_drive
+[14.696s] [ 66%] Linking CXX shared library libobstacles.dylib
+[14.736s] [ 83%] Linking CXX shared library libobstacle2.dylib
+[14.736s] [ 83%] Linking CXX shared library libobstacle1.dylib
+[14.819s] [ 91%] Linking CXX shared library libtraffic_bar_plugin.dylib
+[14.894s] [ 91%] Built target obstacles
+[14.920s] [ 91%] Built target obstacle2
+[14.920s] [ 91%] Built target obstacle1
+[14.976s] [100%] Linking CXX shared library libtraffic_light_plugin.dylib
+[14.980s] [100%] Built target traffic_bar_plugin
+[15.127s] [100%] Built target traffic_light_plugin
+[15.139s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --build /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo -- -j10 -l10
+[15.143s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --install /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo
+[15.153s] -- Install configuration: ""
+[15.153s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[15.156s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[15.157s] [cctools-port]: generating fake signature for '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive'
+[15.169s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[15.169s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[15.169s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[15.169s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[15.170s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_autorace_2020.launch.py
+[15.170s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[15.170s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[15.170s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_spawn_turtlebot3.launch.py
+[15.171s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[15.171s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[15.171s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multi_robot.launch.py
+[15.171s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[15.171s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[15.171s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[15.172s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020
+[15.172s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course
+[15.172s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials
+[15.172s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/textures
+[15.172s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/textures/course.png
+[15.172s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/scripts
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/materials/scripts/course.material
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/model.sdf
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/course/model.config
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/textures
+[15.173s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/textures/traffic_noentry.png
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/scripts
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/materials/scripts/traffic_noentry.material
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/model.sdf
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_noentry/model.config
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/textures
+[15.174s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/textures/checker.png
+[15.175s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/checker.png
+[15.175s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/scripts
+[15.175s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/materials/scripts/checker.material
+[15.175s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/model.sdf
+[15.175s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/checker/model.config
+[15.175s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/textures
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/textures/traffic_construction.png
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/scripts
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/materials/scripts/traffic_construction.material
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/model.sdf
+[15.176s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_construction/model.config
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/textures
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/textures/traffic_right.png
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/scripts
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/materials/scripts/traffic_right.material
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/model.sdf
+[15.177s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_right/model.config
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/textures
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/textures/traffic_intersection.png
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/scripts
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/materials/scripts/traffic_intersection.material
+[15.178s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/model.sdf
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_intersection/model.config
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/textures
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/textures/traffic_pl_left.png
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/scripts
+[15.179s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/materials/scripts/traffic_pl_left.material
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/model.sdf
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_pl_left/model.config
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/textures
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/textures/tunnel.png
+[15.180s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/scripts
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/materials/scripts/tunnel.material
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/model.sdf
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_tunnel/model.config
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/textures
+[15.181s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/textures/traffic_parking.png
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/scripts
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/materials/scripts/traffic_parking.material
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/model.sdf
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_parking/model.config
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures
+[15.182s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_red.png
+[15.183s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_green.png
+[15.183s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light_yellow.png
+[15.183s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/textures/traffic_light.png
+[15.183s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/scripts
+[15.184s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/materials/scripts/traffic_light.material
+[15.184s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/model.sdf
+[15.184s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_light/model.config
+[15.184s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left
+[15.185s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials
+[15.185s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/textures
+[15.185s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/textures/traffic_left.png
+[15.185s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/scripts
+[15.185s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/materials/scripts/traffic_is_left.material
+[15.185s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/model.sdf
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_left/model.config
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/textures
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/textures/traffic_stop.png
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/scripts
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/materials/scripts/traffic_stop.material
+[15.186s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/model.sdf
+[15.187s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_stop/model.config
+[15.187s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar
+[15.187s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials
+[15.187s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/textures
+[15.187s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/textures/traffic_bar.png
+[15.187s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/scripts
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/materials/scripts/traffic_bar.material
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/model.sdf
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_autorace_2020/traffic_bar/model.config
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[15.188s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[15.189s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[15.190s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[15.190s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[15.190s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[15.190s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors
+[15.190s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.jpg
+[15.190s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.jpg
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/lds.stl
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/r200.dae
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/sensors/astra.dae
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_base.stl
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/burger_base.stl
+[15.191s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/bases/waffle_pi_base.stl
+[15.192s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[15.192s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels
+[15.192s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/right_tire.stl
+[15.192s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/wheels/left_tire.stl
+[15.192s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[15.193s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[15.193s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[15.193s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[15.193s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[15.193s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[15.193s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/wall.dae
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/meshes/hexagon.dae
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[15.194s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[15.195s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[15.195s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[15.195s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[15.195s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[15.195s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[15.195s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[15.196s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[15.197s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[15.198s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam
+[15.198s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.sdf
+[15.198s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model.config
+[15.198s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger_cam/model-1_4.sdf
+[15.198s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[15.198s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[15.199s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[15.199s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[15.199s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[15.199s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[15.199s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[15.200s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger_cam.urdf
+[15.200s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[15.200s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[15.200s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_autorace_2020.world
+[15.200s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[15.201s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[15.201s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[15.201s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[15.202s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[15.202s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[15.202s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include/
+[15.202s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[15.202s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_bar_plugin.hpp
+[15.203s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle2.hpp
+[15.203s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacles.hpp
+[15.203s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/obstacle1.hpp
+[15.203s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[15.203s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/include//turtlebot3_gazebo/traffic_light_plugin.hpp
+[15.204s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[15.204s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[15.204s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[15.204s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[15.204s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[15.205s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[15.205s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[15.205s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[15.205s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[15.205s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[15.206s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[15.206s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[15.206s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[15.206s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.206s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[15.207s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[15.207s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[15.208s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --install /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo

@@ -1,0 +1,11 @@
+setup.py
+irob_interfaces/__init__.py
+irob_interfaces.egg-info/PKG-INFO
+irob_interfaces.egg-info/SOURCES.txt
+irob_interfaces.egg-info/dependency_links.txt
+irob_interfaces.egg-info/top_level.txt
+irob_interfaces/srv/__init__.py
+irob_interfaces/srv/_activate.py
+irob_interfaces/srv/_at_goal.py
+irob_interfaces/srv/_deactivate.py
+irob_interfaces/srv/_get_goal.py

@@ -1,0 +1,15 @@
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/uninstall.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/turtlebot3_gazebo_uninstall.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/turtlebot3_drive.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/traffic_light_plugin.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/traffic_bar_plugin.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/obstacle1.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/obstacle2.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/obstacles.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/test.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/edit_cache.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/rebuild_cache.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/list_install_components.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/install.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/install/local.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_gazebo/CMakeFiles/install/strip.dir

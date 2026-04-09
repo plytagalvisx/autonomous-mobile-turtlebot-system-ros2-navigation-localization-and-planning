@@ -1,0 +1,115 @@
+[0.485s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_assignment_5': CMAKE_PREFIX_PATH=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_interfaces:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_simulations:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_manipulation_gazebo:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node:/Users/milenavilcinskaite/micromamba/envs/ros_env4 CONDA_PROMPT_MODIFIER=(ros_env4) PYTHONPATH=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/prefix_override:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_interfaces/lib/python3.12/site-packages:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python312/site-packages:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/irob_assignment_5 build --build-base /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build install --record /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/install.log --install-scripts $base/lib/irob_assignment_5 --single-version-externally-managed install_data
+[0.591s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[0.591s] !!
+[0.591s] 
+[0.591s]         ********************************************************************************
+[0.591s]         Usage of dash-separated 'script-dir' will not be supported in future
+[0.592s]         versions. Please use the underscore name 'script_dir' instead.
+[0.592s] 
+[0.592s] 
+[0.592s]         Available configuration options are listed in:
+[0.592s]         https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
+[0.592s] 
+[0.592s]         This deprecation is overdue, please update your project and remove deprecated
+[0.592s]         calls to avoid build errors in the future.
+[0.592s] 
+[0.592s]         See https://github.com/pypa/setuptools/discussions/5011 for details.
+[0.592s]         ********************************************************************************
+[0.592s] 
+[0.592s] !!
+[0.592s]   opt = self._enforce_underscore(opt, section)
+[0.604s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'tests_require'
+[0.604s]   warnings.warn(msg)
+[0.628s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[0.628s] !!
+[0.628s] 
+[0.628s]         ********************************************************************************
+[0.628s]         Usage of dash-separated 'script-dir' will not be supported in future
+[0.628s]         versions. Please use the underscore name 'script_dir' instead.
+[0.628s]         (Affected: irob_assignment_5).
+[0.628s] 
+[0.628s]         Available configuration options are listed in:
+[0.628s]         https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
+[0.628s] 
+[0.628s]         This deprecation is overdue, please update your project and remove deprecated
+[0.628s]         calls to avoid build errors in the future.
+[0.628s] 
+[0.628s]         See https://github.com/pypa/setuptools/discussions/5011 for details.
+[0.628s]         ********************************************************************************
+[0.628s] 
+[0.628s] !!
+[0.629s]   opt = self._enforce_underscore(opt, section)
+[0.682s] running egg_info
+[0.695s] creating ../../build/irob_assignment_5/irob_assignment_5.egg-info
+[0.695s] writing ../../build/irob_assignment_5/irob_assignment_5.egg-info/PKG-INFO
+[0.696s] writing dependency_links to ../../build/irob_assignment_5/irob_assignment_5.egg-info/dependency_links.txt
+[0.696s] writing entry points to ../../build/irob_assignment_5/irob_assignment_5.egg-info/entry_points.txt
+[0.696s] writing requirements to ../../build/irob_assignment_5/irob_assignment_5.egg-info/requires.txt
+[0.696s] writing top-level names to ../../build/irob_assignment_5/irob_assignment_5.egg-info/top_level.txt
+[0.696s] writing manifest file '../../build/irob_assignment_5/irob_assignment_5.egg-info/SOURCES.txt'
+[0.722s] reading manifest file '../../build/irob_assignment_5/irob_assignment_5.egg-info/SOURCES.txt'
+[0.723s] writing manifest file '../../build/irob_assignment_5/irob_assignment_5.egg-info/SOURCES.txt'
+[0.723s] running build
+[0.723s] running build_py
+[0.723s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.723s] copying irob_assignment_5/goal_server.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.724s] copying irob_assignment_5/SM_students.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.724s] copying irob_assignment_5/__init__.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.724s] copying irob_assignment_5/explorer.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.724s] copying irob_assignment_5/at_goal_server.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.725s] copying irob_assignment_5/reactive_sequence.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.725s] copying irob_assignment_5/activation_server.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.725s] copying irob_assignment_5/BT_students.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5
+[0.726s] running install
+[0.730s] running install_lib
+[0.743s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.743s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/goal_server.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.743s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/SM_students.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.743s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/__init__.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.743s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/explorer.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.744s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/at_goal_server.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.744s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/reactive_sequence.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.744s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/activation_server.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.744s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build/lib/irob_assignment_5/BT_students.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5
+[0.744s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/goal_server.py to goal_server.cpython-312.pyc
+[0.745s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/SM_students.py to SM_students.cpython-312.pyc
+[0.747s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/__init__.py to __init__.cpython-312.pyc
+[0.747s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/explorer.py to explorer.cpython-312.pyc
+[0.749s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/at_goal_server.py to at_goal_server.cpython-312.pyc
+[0.749s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/reactive_sequence.py to reactive_sequence.cpython-312.pyc
+[0.750s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/activation_server.py to activation_server.cpython-312.pyc
+[0.750s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5/BT_students.py to BT_students.cpython-312.pyc
+[0.754s] running install_data
+[0.754s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/ament_index/resource_index/packages
+[0.754s] copying resource/irob_assignment_5 -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/ament_index/resource_index/packages
+[0.754s] copying package.xml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5
+[0.754s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/launch
+[0.754s] copying launch/start_navigation.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/launch
+[0.755s] copying launch/simulator.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/launch
+[0.755s] copying launch/project_launch.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/launch
+[0.755s] copying launch/slam.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/launch
+[0.756s] copying launch/start.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/launch
+[0.756s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/config
+[0.756s] copying config/goal_params_BT_level_A.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/config
+[0.756s] copying config/navigation.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/config
+[0.757s] copying config/slam_params.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/config
+[0.757s] copying config/goal_params_BT.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/config
+[0.757s] copying config/goal_params_SM.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/config
+[0.757s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/srv
+[0.758s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/rviz
+[0.758s] copying rviz/view.rviz -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/rviz
+[0.758s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/maps
+[0.758s] copying maps/appartment.world -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/maps
+[0.759s] copying maps/map.pgm -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/maps
+[0.759s] copying maps/world.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/share/irob_assignment_5/maps
+[0.760s] running install_egg_info
+[0.773s] Copying ../../build/irob_assignment_5/irob_assignment_5.egg-info to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages/irob_assignment_5-1.0.0-py3.12.egg-info
+[0.775s] running install_scripts
+[0.800s] Installing activation_server script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/irob_assignment_5
+[0.801s] Installing at_goal_server script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/irob_assignment_5
+[0.801s] Installing bt_students script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/irob_assignment_5
+[0.801s] Installing explorer script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/irob_assignment_5
+[0.801s] Installing goal_server script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/irob_assignment_5
+[0.801s] Installing sm_students script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/irob_assignment_5
+[0.801s] writing list of installed files to '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/install.log'
+[0.817s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_assignment_5' returned '0': CMAKE_PREFIX_PATH=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_interfaces:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_simulations:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_manipulation_gazebo:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_gazebo:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node:/Users/milenavilcinskaite/micromamba/envs/ros_env4 CONDA_PROMPT_MODIFIER=(ros_env4) PYTHONPATH=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/prefix_override:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_interfaces/lib/python3.12/site-packages:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5/lib/python3.12/site-packages:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python312/site-packages:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/irob_assignment_5 build --build-base /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/build install --record /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_5/install.log --install-scripts $base/lib/irob_assignment_5 --single-version-externally-managed install_data

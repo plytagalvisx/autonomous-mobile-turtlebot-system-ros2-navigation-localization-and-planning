@@ -1,0 +1,30 @@
+{
+  "package_name": "irob_interfaces",
+  "output_dir": "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_generator_py/irob_interfaces",
+  "template_dir": "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces:srv/GetGoal.idl",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces:srv/Activate.idl",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces:srv/Deactivate.idl",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces:srv/AtGoal.idl"
+  ],
+  "target_dependencies": [
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/rosidl_generator_py/__init__.py",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces/srv/GetGoal.idl",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces/srv/Activate.idl",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces/srv/Deactivate.idl",
+    "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/rosidl_adapter/irob_interfaces/srv/AtGoal.idl"
+  ]
+}

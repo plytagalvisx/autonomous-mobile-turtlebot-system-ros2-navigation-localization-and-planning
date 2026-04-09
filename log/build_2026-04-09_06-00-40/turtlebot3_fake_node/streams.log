@@ -1,0 +1,118 @@
+[0.025s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node
+[0.208s] CMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+[0.208s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.208s]   CMake.
+[0.209s] 
+[0.209s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.209s]   to tell CMake that the project requires at least <min> but has been updated
+[0.209s]   to work with policies introduced by <max> or earlier.
+[0.209s] 
+[0.209s] 
+[0.210s] -- The C compiler identification is Clang 19.1.7
+[0.353s] -- The CXX compiler identification is Clang 19.1.7
+[0.381s] -- Detecting C compiler ABI info
+[0.556s] -- Detecting C compiler ABI info - done
+[0.562s] -- Check for working C compiler: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/arm64-apple-darwin20.0.0-clang - skipped
+[0.562s] -- Detecting C compile features
+[0.562s] -- Detecting C compile features - done
+[0.568s] -- Detecting CXX compiler ABI info
+[0.750s] -- Detecting CXX compiler ABI info - done
+[0.757s] -- Check for working CXX compiler: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+[0.757s] -- Detecting CXX compile features
+[0.757s] -- Detecting CXX compile features - done
+[0.795s] -- Found ament_cmake: 1.3.13 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/ament_cmake/cmake)
+[0.955s] -- Found Python3: /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/python3 (found version "3.12.13") found components: Interpreter
+[1.336s] -- Found geometry_msgs: 4.9.1 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/geometry_msgs/cmake)
+[1.510s] -- Found rosidl_generator_c: 3.1.8 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_c/cmake)
+[1.540s] -- Found rosidl_adapter: 3.1.8 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_adapter/cmake)
+[1.578s] -- Found rosidl_generator_cpp: 3.1.8 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rosidl_generator_cpp/cmake)
+[1.618s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.677s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.795s] -- Found nav_msgs: 4.9.1 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/nav_msgs/cmake)
+[1.841s] -- Found rclcpp: 16.0.18 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rclcpp/cmake)
+[2.075s] -- Checking for module 'yaml-0.1'
+[2.180s] --   Found yaml-0.1, version 0.2.5
+[2.546s] -- Found rmw_implementation_cmake: 6.1.2 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rmw_implementation_cmake/cmake)
+[2.546s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/rmw_cyclonedds_cpp/cmake)
+[2.624s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.663s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.826s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.827s] -- Found Threads: TRUE
+[2.949s] -- Found sensor_msgs: 4.9.1 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/sensor_msgs/cmake)
+[2.996s] -- Found tf2: 0.25.19 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/tf2/cmake)
+[3.029s] -- Found tf2_msgs: 0.25.19 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/tf2_msgs/cmake)
+[3.160s] -- Found turtlebot3_msgs: 2.4.0 (/Users/milenavilcinskaite/micromamba/envs/ros_env4/share/turtlebot3_msgs/cmake)
+[3.274s] -- Configuring done (3.2s)
+[3.313s] -- Generating done (0.0s)
+[3.361s] -- Build files have been written to: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node
+[3.364s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node
+[3.367s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --build /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node -- -j10 -l10
+[3.434s] [ 50%] Building CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o
+[5.505s] In file included from /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:17:
+[5.506s] In file included from /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_fake_node/include/turtlebot3_fake_node/turtlebot3_fake_node.hpp:23:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/rclcpp.hpp:155:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executors.hpp:21:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executor.hpp:37:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/executor_options.hpp:20:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/memory_strategies.hpp:18:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/memory_strategy.hpp:25:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_executable.hpp:20:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/callback_group.hpp:29:
+[5.506s] In file included from /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/subscription_base.hpp:32:
+[5.506s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_subscription_callback.hpp:391:7: warning: 'set_deprecated<geometry_msgs::msg::Twist_<std::allocator<void>>>' is deprecated: use 'void(std::shared_ptr<const MessageT>)' instead [-Wdeprecated-declarations]
+[5.506s]   391 |       set_deprecated(static_cast<typename scbth::callback_type>(callback));
+[5.506s]       |       ^
+[5.506s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/subscription_factory.hpp:94:29: note: in instantiation of function template specialization 'rclcpp::AnySubscriptionCallback<geometry_msgs::msg::Twist_<std::allocator<void>>>::set<std::__bind<void (Turtlebot3Fake::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void>>>), Turtlebot3Fake *, const std::placeholders::__ph<1> &>>' requested here
+[5.506s]    94 |   any_subscription_callback.set(std::forward<CallbackT>(callback));
+[5.506s]       |                             ^
+[5.506s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/create_subscription.hpp:122:26: note: in instantiation of function template specialization 'rclcpp::create_subscription_factory<geometry_msgs::msg::Twist_<std::allocator<void>>, std::__bind<void (Turtlebot3Fake::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void>>>), Turtlebot3Fake *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void>>>, geometry_msgs::msg::Twist_<std::allocator<void>>>' requested here
+[5.506s]   122 |   auto factory = rclcpp::create_subscription_factory<MessageT>(
+[5.506s]       |                          ^
+[5.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/create_subscription.hpp:190:26: note: in instantiation of function template specialization 'rclcpp::detail::create_subscription<geometry_msgs::msg::Twist_<std::allocator<void>>, std::__bind<void (Turtlebot3Fake::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void>>>), Turtlebot3Fake *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void>>>, rclcpp::Node, rclcpp::Node, geometry_msgs::msg::Twist_<std::allocator<void>>>' requested here
+[5.507s]   190 |   return rclcpp::detail::create_subscription<
+[5.507s]       |                          ^
+[5.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/node_impl.hpp:99:18: note: in instantiation of function template specialization 'rclcpp::create_subscription<geometry_msgs::msg::Twist_<std::allocator<void>>, std::__bind<void (Turtlebot3Fake::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void>>>), Turtlebot3Fake *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void>>>, rclcpp::Node>' requested here
+[5.507s]    99 |   return rclcpp::create_subscription<MessageT>(
+[5.507s]       |                  ^
+[5.507s] /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/turtlebot3_simulations/turtlebot3_fake_node/src/turtlebot3_fake_node.cpp:48:24: note: in instantiation of function template specialization 'rclcpp::Node::create_subscription<geometry_msgs::msg::Twist_<std::allocator<void>>, std::__bind<void (Turtlebot3Fake::*)(std::shared_ptr<geometry_msgs::msg::Twist_<std::allocator<void>>>), Turtlebot3Fake *, const std::placeholders::__ph<1> &>, std::allocator<void>, rclcpp::Subscription<geometry_msgs::msg::Twist_<std::allocator<void>>>, rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::Twist_<std::allocator<void>>>>' requested here
+[5.507s]    48 |   cmd_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
+[5.507s]       |                        ^
+[5.507s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/include/rclcpp/rclcpp/any_subscription_callback.hpp:405:5: note: 'set_deprecated<geometry_msgs::msg::Twist_<std::allocator<void>>>' has been explicitly marked deprecated here
+[5.507s]   405 |   [[deprecated("use 'void(std::shared_ptr<const MessageT>)' instead")]]
+[5.507s]       |     ^
+[9.012s] 1 warning generated.
+[9.043s] [100%] Linking CXX executable turtlebot3_fake_node
+[9.130s] [100%] Built target turtlebot3_fake_node
+[9.145s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --build /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node -- -j10 -l10
+[9.146s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --install /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node
+[9.160s] -- Install configuration: ""
+[9.160s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[9.160s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch
+[9.160s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[9.160s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[9.160s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param
+[9.161s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[9.161s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[9.161s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[9.161s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/include/
+[9.162s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node
+[9.162s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[9.162s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[9.162s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[9.163s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[9.163s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[9.163s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[9.163s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[9.163s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[9.164s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[9.164s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[9.164s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[9.164s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[9.165s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[9.165s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.165s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.165s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[9.165s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[9.166s] -- Installing: /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[9.167s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_5:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1 CONDA_PROMPT_MODIFIER=(ros_env4) SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/cmake --install /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node

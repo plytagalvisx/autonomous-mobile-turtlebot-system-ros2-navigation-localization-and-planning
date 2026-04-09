@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "irob_interfaces__py",
+		"source" : "/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_interfaces/irob_interfaces__py"
+	}
+}

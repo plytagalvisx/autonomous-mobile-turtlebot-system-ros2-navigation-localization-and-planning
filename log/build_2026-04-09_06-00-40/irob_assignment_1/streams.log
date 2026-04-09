@@ -1,0 +1,83 @@
+[0.529s] Invoking command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_assignment_1': CONDA_PROMPT_MODIFIER=(ros_env4) PYTHONPATH=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/prefix_override:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/irob_assignment_1 build --build-base /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build install --record /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/install.log --install-scripts $base/lib/irob_assignment_1 --single-version-externally-managed install_data
+[0.640s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[0.640s] !!
+[0.640s] 
+[0.640s]         ********************************************************************************
+[0.640s]         Usage of dash-separated 'script-dir' will not be supported in future
+[0.640s]         versions. Please use the underscore name 'script_dir' instead.
+[0.640s] 
+[0.640s] 
+[0.641s]         Available configuration options are listed in:
+[0.641s]         https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
+[0.641s] 
+[0.641s]         This deprecation is overdue, please update your project and remove deprecated
+[0.641s]         calls to avoid build errors in the future.
+[0.641s] 
+[0.641s]         See https://github.com/pypa/setuptools/discussions/5011 for details.
+[0.641s]         ********************************************************************************
+[0.641s] 
+[0.641s] !!
+[0.641s]   opt = self._enforce_underscore(opt, section)
+[0.655s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'tests_require'
+[0.655s]   warnings.warn(msg)
+[0.681s] /Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[0.681s] !!
+[0.681s] 
+[0.681s]         ********************************************************************************
+[0.681s]         Usage of dash-separated 'script-dir' will not be supported in future
+[0.681s]         versions. Please use the underscore name 'script_dir' instead.
+[0.681s]         (Affected: irob_assignment_1).
+[0.681s] 
+[0.681s]         Available configuration options are listed in:
+[0.681s]         https://setuptools.pypa.io/en/latest/userguide/declarative_config.html
+[0.681s] 
+[0.681s]         This deprecation is overdue, please update your project and remove deprecated
+[0.682s]         calls to avoid build errors in the future.
+[0.682s] 
+[0.682s]         See https://github.com/pypa/setuptools/discussions/5011 for details.
+[0.682s]         ********************************************************************************
+[0.682s] 
+[0.682s] !!
+[0.682s]   opt = self._enforce_underscore(opt, section)
+[0.738s] running egg_info
+[0.751s] creating ../../build/irob_assignment_1/irob_assignment_1.egg-info
+[0.751s] writing ../../build/irob_assignment_1/irob_assignment_1.egg-info/PKG-INFO
+[0.752s] writing dependency_links to ../../build/irob_assignment_1/irob_assignment_1.egg-info/dependency_links.txt
+[0.752s] writing entry points to ../../build/irob_assignment_1/irob_assignment_1.egg-info/entry_points.txt
+[0.752s] writing requirements to ../../build/irob_assignment_1/irob_assignment_1.egg-info/requires.txt
+[0.752s] writing top-level names to ../../build/irob_assignment_1/irob_assignment_1.egg-info/top_level.txt
+[0.753s] writing manifest file '../../build/irob_assignment_1/irob_assignment_1.egg-info/SOURCES.txt'
+[0.785s] reading manifest file '../../build/irob_assignment_1/irob_assignment_1.egg-info/SOURCES.txt'
+[0.786s] writing manifest file '../../build/irob_assignment_1/irob_assignment_1.egg-info/SOURCES.txt'
+[0.786s] running build
+[0.786s] running build_py
+[0.786s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build/lib/irob_assignment_1
+[0.786s] copying irob_assignment_1/__init__.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build/lib/irob_assignment_1
+[0.786s] copying irob_assignment_1/explorer.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build/lib/irob_assignment_1
+[0.787s] running install
+[0.791s] running install_lib
+[0.805s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages/irob_assignment_1
+[0.805s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build/lib/irob_assignment_1/__init__.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages/irob_assignment_1
+[0.805s] copying /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build/lib/irob_assignment_1/explorer.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages/irob_assignment_1
+[0.806s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages/irob_assignment_1/__init__.py to __init__.cpython-312.pyc
+[0.806s] byte-compiling /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages/irob_assignment_1/explorer.py to explorer.cpython-312.pyc
+[0.808s] running install_data
+[0.808s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/ament_index/resource_index/packages
+[0.809s] copying resource/irob_assignment_1 -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/ament_index/resource_index/packages
+[0.809s] copying package.xml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1
+[0.809s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/launch
+[0.809s] copying launch/start_navigation.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/launch
+[0.810s] copying launch/simulator.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/launch
+[0.810s] copying launch/slam.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/launch
+[0.810s] copying launch/start.launch.py -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/launch
+[0.811s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/config
+[0.811s] copying config/navigation.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/config
+[0.811s] copying config/slam_params.yaml -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/config
+[0.812s] creating /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/rviz
+[0.812s] copying rviz/view.rviz -> /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/share/irob_assignment_1/rviz
+[0.812s] running install_egg_info
+[0.826s] Copying ../../build/irob_assignment_1/irob_assignment_1.egg-info to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages/irob_assignment_1-1.0.0-py3.12.egg-info
+[0.828s] running install_scripts
+[0.857s] Installing explorer script to /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/irob_assignment_1
+[0.857s] writing list of installed files to '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/install.log'
+[0.872s] Invoked command in '/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/src/irob_assignment_1' returned '0': CONDA_PROMPT_MODIFIER=(ros_env4) PYTHONPATH=/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/prefix_override:/Users/milenavilcinskaite/micromamba/envs/ros_env4/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/install/irob_assignment_1/lib/python3.12/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x2 /Users/milenavilcinskaite/micromamba/envs/ros_env4/bin/python3.12 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/irob_assignment_1 build --build-base /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/build install --record /Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/irob_assignment_1/install.log --install-scripts $base/lib/irob_assignment_1 --single-version-externally-managed install_data

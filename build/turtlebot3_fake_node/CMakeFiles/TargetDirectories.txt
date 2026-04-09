@@ -1,0 +1,10 @@
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/uninstall.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/turtlebot3_fake_node_uninstall.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/turtlebot3_fake_node.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/test.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/edit_cache.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/rebuild_cache.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/list_install_components.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/install.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/install/local.dir
+/Users/milenavilcinskaite/Downloads/ros2_burger_final_form_ws/build/turtlebot3_fake_node/CMakeFiles/install/strip.dir
