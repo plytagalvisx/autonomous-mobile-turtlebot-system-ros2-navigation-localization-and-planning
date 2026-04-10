@@ -32,6 +32,14 @@ The robot operates in a simulated environment (Gazebo + RViz) and must complete 
 
 ---
 
+## Development Environment
+
+- **Operating System:** MacBook M1 Pro (macOS)
+- **Middleware:** ROS 2 Humble (via RoboStack)
+- **Programming Language:** Python
+- 
+---
+
 ## 🧠 Project Concept
 
 In this assignment, I implemented a **mission planner node** responsible for high-level robot behavior.
