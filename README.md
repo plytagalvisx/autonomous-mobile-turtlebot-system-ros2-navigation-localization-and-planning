@@ -7,6 +7,10 @@ https://github.com/paragkhanna1/KTH_DD2410_Assign5_2025/
 
 I originally completed DD2410 in **HT23** which teached ROS1. This assignment is from a newer iteration of the course (HT25) which teaches ROS2, and which I chose to complete independently to further challenge myself. Unlike the standard course format where this project is done **in pairs**, I completed this assignment **entirely on my own**.
 
+## Demo
+
+![nav2_demo](images/nav2_demo.gif "NAV2 autonomous Turtlebot Demo")
+
 ---
 
 ## 📌 Assignment Overview
