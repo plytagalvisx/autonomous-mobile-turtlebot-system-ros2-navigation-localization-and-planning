@@ -32,12 +32,12 @@ The robot operates in a simulated environment (Gazebo + RViz) and must complete 
 
 ---
 
-## Development Environment
+## 🔧 Development Environment
 
 - **Operating System:** MacBook M1 Pro (macOS)
 - **Middleware:** ROS 2 Humble (via RoboStack)
 - **Programming Language:** Python
-- 
+
 ---
 
 ## 🧠 Project Concept
